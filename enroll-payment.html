@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pawsitive Pet Academy - Pay Fees</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-5.3.0.min.css">
+    <!-- fonts & icon -->
+    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="_css-assets/main-style.css">
+  </head>
+  <body>
+    <div class="loading-page" id="preloader-active">
+      <div class="counter">
+          <p class="text text-capitalize">Pay Fees</p>
+          <span class="number">0%</span>
+          <span class="line"></span>
+      </div>
+    </div>
+    <header>
+      <div class="header-area">
+        <div class="main-header header-sticky">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                  <div class="header-left d-flex align-items-center justify-content-between">
+                    <!-- Logo-->
+                    <div class="logo logo-large light-logo">
+                      <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Pawsitive Pet Academy logo"></a>
+                    </div>
+                    <!-- Logo Mobile-->
+                    <div class="logo logo-mobile light-logo">
+                      <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Pawsitive Pet Academy logo"></a>
+                    </div>
+                  </div>
+
+                  <div class="search-container">
+                    <input type="text" id="searchField" class="search-field" placeholder="Search...">
+                    <button type="button" id="closeSearch" class="close-search-btn" aria-label="Close search"><i class="ri-close-line" aria-hidden="true"></i></button>
+                  </div>
+
+                  <!-- Main-menu for desktop -->
+                  <div class="main-menu d-none d-lg-block">
+                    <nav>
+                      <ul class="listing" id="navigation">
+                        <li class="single-list"><a href="index.html" class="single">Home</a></li>
+                        <li class="single-list"><a href="aboutus.html" class="single">About</a></li>
+                        <li class="single-list"><a href="courses.html" class="single">Courses</a></li>
+                        <li class="single-list"><a href="enroll-payment.html" class="single">Pay Fees</a></li>
+                        <li class="single-list"><a href="contact-us.html" class="single">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                  <!-- Mobile Menu -->
+                  <div class="div">
+                    <div class="mobile_menu d-block d-lg-none"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Donation Payment S t a r t -->
+      <div class="donation-payment section-padding">
+          <div class="container">
+              <div class="row g-24 justify-content-between">
+                  <div class="col-lg-7">
+                      <!-- Payment -->
+                      <div class="card-style box-shadow border-0">
+                          <div class="small-tittle mb-50">
+                              <h2 class="title text-capitalize font-600 position-relative">Select your course</h2>
+                          </div>
+                          <ul class="selectPricing mb-20">
+                              <li class="listItem" data-amount="1500">Canine Obedience Training</li>
+                              <li class="listItem" data-amount="1500">Pet Grooming</li>
+                              <li class="listItem" data-amount="1500">Animal Behaviour</li>
+                              <li class="listItem" data-amount="1500">Pet Business Management</li>
+                              <li class="listItem" data-amount="750">Puppy Care</li>
+                              <li class="listItem" data-amount="750">Pet First Aid</li>
+                              <li class="listItem" data-amount="750">Basic Dog Walking</li>
+                          </ul>
+                          <form action="#">
+                              <div class="row">
+                                  <div class="col-lg-12">
+                                      <div class="contact-form mb-24">
+                                          <label class="contact-label">Amount</label>
+                                          <input class="form-control contact-input left_default_amount" type="number" min="1" value="0" placeholder="Choose your course">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4">
+                                      <div class="contact-form mb-24">
+                                          <label class="contact-label">Name</label>
+                                          <input class="form-control contact-input" type="text" placeholder="Your Name">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4">
+                                      <div class="contact-form mb-24">
+                                          <label class="contact-label">Card Number</label>
+                                          <input class="form-control contact-input" type="number" placeholder="Your Card Number">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4">
+                                    <div class="contact-form mb-24">
+                                        <label class="contact-label">CVV Number</label>
+                                        <input class="form-control contact-input" type="number" placeholder="CVV">
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group col-12 payment-gateway-wrapper mt-10">
+                                  <div class="remember-me terms-condition">
+                                      <label>
+                                          <input class="checkbox-style" type="checkbox" value="remember" name="remember">
+                                          <small>I agree to all the 
+                                              <a href="#">
+                                                  <span>Terms</span></a> and <a href="#"><span>Privacy policy</span>
+                                              </a>
+                                          </small>
+                                          <span class="checkmark-style"></span>
+                                      </label>
+                                  </div>
+                                  <button type="submit" class="btn-primary-submit">Pay</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-5 col-md-7">
+                    <div class="blog-section-two">
+                      <div class="single-blog h-calc">
+                          <div class="blog-img position-relative">
+                            <a href="enroll-payment.html"> <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&amp;fit=crop&amp;w=700&amp;h=420&amp;q=85" class="img-fluid w-100 pet-image" alt="Pet care payment information"> </a>
+                            <div class="blog-img-overlay-text"></div>
+                          </div>
+                          <!-- Payment Details -->
+                          <div class="paymentDetails card-style box-shadow border-0 mb-24">
+                            <div class="blog-info">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="blog-info-title">
+                                  <h4 class="title text-capitalize">Your Fees</h4>
+                                  <p class="subtitle">These are the total fees for the course that you will be doing</p>
+                                  <div class="priceListing">
+                                      <ul class="listing">
+                                          <li class="listItem"><p class="leftCap rightCap font-600">Total</p> <p class="rightCap total_donation_amount font-600">R0</p></li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--End-of Donation Payment -->
+            
+    </main>
+    <!-- Footer S t a r t -->
+    <footer>
+      <div class="footer-wrapper footer-bg-one">
+        <div class="footer-bottom-area">
+          <div class="container">
+            <div class="footer-border">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="footer-copy-right text-center">
+                    <p class="pera">Copyright © 2026 Pawsitive Pet Academy. All rights reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End-of Footer -->
+    <!-- Scroll Up  -->
+    <div class="progressParent" id="back-top">
+      <svg class="backCircle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+      </svg>
+    </div>
+    <!-- Add an overlay element -->
+    <div class="overlay"></div>
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-5.3.0.min.js"></script>
+    <!-- Plugin -->
+    <script src="assets/js/plugin.js"></script>
+    <!-- Main js-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

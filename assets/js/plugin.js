@@ -1,0 +1,1 @@
+/* Optional animation plugin placeholder. */

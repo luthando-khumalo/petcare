@@ -1,0 +1,443 @@
+/* ========================================================================== 
+   Base & Reset Styles
+   ========================================================================== */
+:root {
+  --primary-color: #2b579a;
+  --primary-hover: #1e3d6f;
+  --secondary-color: #ff9800;
+  --dark-color: #222222;
+  --light-bg: #f8f9fa;
+  --border-color: #e2e8f0;
+  --text-muted: #6c757d;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+ul.listing {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.font-600 { font-weight: 600; }
+.font-700 { font-weight: 700; }
+
+/* ==========================================================================
+   Preloader
+   ========================================================================== */
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-page .counter {
+  text-align: center;
+}
+
+.loading-page .counter .line {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 10px auto 0;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+.header-area {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.main-menu nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+.main-menu nav ul li a {
+  font-weight: 600;
+  color: var(--dark-color);
+  padding: 10px 0;
+}
+
+.main-menu nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-field {
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.close-search-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn-primary-fill,
+.btn-primary-submit,
+.submit-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary-fill:hover,
+.btn-primary-submit:hover,
+.submit-btn:hover {
+  background: var(--primary-hover);
+  color: #ffffff;
+}
+
+.btn-tertiary-fill {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-tertiary-fill:hover {
+  background: #e08600;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Hero Sections (Home & About)
+   ========================================================================== */
+.hero-area,
+.hero-area-two {
+  padding: 80px 0;
+  background: var(--light-bg);
+}
+
+.hero-area-two.full-height {
+  height: 100%;
+}
+
+.hero-caption-one .key-title,
+.hero-caption .key-title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-caption-one .title,
+.hero-caption .title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-caption-one .pera,
+.hero-caption .pera {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Courses Section
+   ========================================================================== */
+.our-event {
+  padding: 80px 0;
+}
+
+.section-tittle .title {
+  font-size: 2.2rem;
+  color: var(--dark-color);
+}
+
+.section-tittle .sub-tittle {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.single-event {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.single-event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.home-highlights {
+  padding: 56px 0;
+  background: #ffffff;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  padding: 22px;
+  border-left: 3px solid var(--secondary-color);
+  background: var(--light-bg);
+}
+
+.highlight-item > i {
+  flex: 0 0 auto;
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.highlight-item .title {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+}
+
+.highlight-item .pera {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.featured-courses {
+  background: var(--light-bg);
+}
+
+.pet-image {
+  aspect-ratio: 7 / 4;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event-info .info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--light-bg);
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+
+.btn-arrow:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Contact & Forms Section
+   ========================================================================== */
+.contact-section {
+  background: var(--light-bg);
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon-list .single-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.contact-content .subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.contact-content .title {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.custom-form .form-group,
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.custom-label,
+.contact-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.custom-input,
+.custom-textarea,
+.contact-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.custom-textarea {
+  min-height: 120px;
+}
+
+/* ==========================================================================
+   Enrollment & Fee Payment Page
+   ========================================================================== */
+.donation-payment {
+  padding: 80px 0;
+}
+
+.selectPricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selectPricing .listItem {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.selectPricing .listItem:hover,
+.selectPricing .listItem.active {
+  background: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+}
+
+.paymentDetails {
+  padding: 20px;
+  background: var(--light-bg);
+  border-radius: 8px;
+}
+
+.priceListing .listItem {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   Footer & Scroll Top
+   ========================================================================== */
+footer {
+  background: #111827;
+  color: #ffffff;
+  padding: 40px 0 20px;
+}
+
+.footer-copy-right .pera {
+  color: #9ca3af;
+}
+
+.footer-social-link ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-social-link a {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.footer-social-link a:hover {
+  color: var(--secondary-color);
+}
+
+.progressParent {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}

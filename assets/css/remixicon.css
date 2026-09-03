@@ -1,0 +1,7 @@
+[class^="ri-"], [class*=" ri-"] { font-style: normal; }
+.ri-close-line::before { content: "x"; }
+.ri-arrow-right-line::before { content: ">"; }
+.ri-facebook-fill::before { content: "f"; }
+.ri-youtube-fill::before { content: "yt"; }
+.ri-instagram-line::before { content: "ig"; }
+.ri-linkedin-fill::before { content: "in"; }
