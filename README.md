@@ -6,10 +6,6 @@
 
 Practical training programmes for pet owners and aspiring pet-care professionals.
 
-[![Made with HTML](https://img.shields.io/badge/Made%20with-HTML5-e34f26?logo=html5&logoColor=white)](#)
-[![Made with CSS](https://img.shields.io/badge/Styled%20with-CSS3-1572b6?logo=css3&logoColor=white)](#)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952b3?logo=bootstrap&logoColor=white)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 </div>
 
