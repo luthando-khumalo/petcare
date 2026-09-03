@@ -15,19 +15,19 @@ Practical training programmes for pet owners and aspiring pet-care professionals
 
 ---
 
-## 📖 About
+##  About
 
 **Pawsitive Pet Academy** is a website built to help pet owners and aspiring professionals build practical, compassionate pet-care skills. The site puts animal wellbeing at the heart of every course, offering hands-on learning that's accessible and easy to navigate.
 
-## ✨ Features
+##  Features
 
-- 🏠 **Home** — a warm introduction to the academy and its mission
-- 📘 **About Us** — meet the academy and learn what it stands for
-- 🎓 **Courses** — browse the full range of pet-care training programmes
-- 💳 **Pay Fees** — a simple enrollment and payment page
-- 📬 **Contact Us** — get in touch with the team
+-  **Home** — a warm introduction to the academy and its mission
+-  **About Us** — meet the academy and learn what it stands for
+-  **Courses** — browse the full range of pet-care training programmes
+-  **Pay Fees** — a simple enrollment and payment page
+-  **Contact Us** — get in touch with the team
 
-## 🛠️ Built With
+##  Built With
 
 - **HTML5** — page structure
 - **CSS3** — custom styling (`_css-assets/main-style.css`)
@@ -36,7 +36,7 @@ Practical training programmes for pet owners and aspiring pet-care professionals
 - **jQuery** — interactivity
 - **JavaScript** — custom scripts (`assets/js/main.js`)
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 petcare/
@@ -53,7 +53,7 @@ petcare/
 └── contact-us.html               # Contact page
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 Clone the repo and open `index.html` in your browser — no build step required:
 
@@ -64,12 +64,8 @@ cd petcare
 
 Then simply open `index.html` in your browser, or serve it locally with a tool like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code.
 
-## 📄 License
+##  License
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
-
-<div align="center">
-Made with 🐶 for pets and the people who care for them.
-</div>
