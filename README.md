@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐾 Pawsitive Pet Academy
+#  Pawsitive Pet Academy
 
 **Learn to care with confidence.**
 
